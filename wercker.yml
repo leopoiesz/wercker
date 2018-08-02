@@ -36,6 +36,7 @@ deploy:
 waiting:
   # The steps that will be executed on build
   steps:
+    - npm-install
     - script:
         name: echo nodejs information
         code: |
