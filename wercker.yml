@@ -33,3 +33,12 @@ deploy:
           echo "npm version $(npm -v) running"
           echo "Leo started this"
           echo "The deploy pipeline"
+waiting:
+  # The steps that will be executed on build
+  steps:
+    - script:
+        name: echo nodejs information
+        code: |
+          echo "sleeping for 30 secs"
+	  sleep 30
+
