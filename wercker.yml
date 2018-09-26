@@ -16,6 +16,8 @@ build:
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
           echo "Leo started this"
+          echo "sleeping 60 secs"
+          sleep 60
 deploy:
   # The steps that will be executed on build
   steps:
@@ -33,6 +35,8 @@ deploy:
           echo "npm version $(npm -v) running"
           echo "Leo started this"
           echo "The deploy pipeline"
+          echo "sleeping 60 secs"
+          sleep 60
 waiting:
   # The steps that will be executed on build
   steps:
